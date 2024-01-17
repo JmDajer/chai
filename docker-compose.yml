@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  chaitea-app:
+    container_name: chaitea-app
+    build:
+      context: ./ChaiTea
+      dockerfile: Dockerfile
+    ports:
+      # external:internal
+      - "8000:80"
+    depends_on:
+      - chaitea-db
+    environment:
+      - ConnectionStrings:DefaultConnection=Host=chaitea-db:5432;Database=chaitea;Username=postgres;Password=postgres
+  
+  chaitea-db:
+    container_name: chaitea-db
+    image: "postgres:15.2-bullseye"
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=chaitea
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    ports:
+    # external:internal
+    - "5432:5432"
+    volumes:
+    - chaitea-db-postgres-volume:/var/lib/postgres/data
+
+volumes:
+  chaitea-db-postgres-volume:

@@ -1,0 +1,439 @@
+:root {
+    --main-color: #228B22;
+    --secondary-color: #FFE4C4;
+    --accsent-color: #FF6F00;
+
+    --main-color-opacity: 34, 139, 34;
+    --secondary-color-opacity: 255, 228, 196;
+    --accsent-color-opacity: 255, 111, 0;
+
+    --text-color: #222222;
+}
+
+html {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1.125rem;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2)
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(var(--main-color-opacity), 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(var(--main-color-opacity), 0.8);
+}
+
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem --accsent-color;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* background: rgb(255, 111, 0); */
+    /* background: linear-gradient(90deg, rgba(255, 111, 0, 0.3) 0%, */
+    /* rgba(255, 228, 196, 1) 10%, */
+    /* rgba(255, 228, 196, 1) 90%, */
+    /* rgba(255, 111, 0, 0.3) 100%); */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1039%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 228%2c 196%2c 1)'%3e%3c/rect%3e%3ccircle r='93.335' cx='-49.66' cy='66.58' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='93.335' cx='391.75' cy='367.77' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='93.335' cx='830.37' cy='833.15' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='116.485' cx='246.68' cy='236.61' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='127.7' cx='1140.37' cy='510.4' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='104.44' cx='767.23' cy='480.9' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='64.24' cx='440.39' cy='518.33' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='134.275' cx='66.72' cy='357.77' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='162.405' cx='463.31' cy='194.22' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='82.72' cx='608.4' cy='155.8' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='135.995' cx='1375.95' cy='154.82' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='99.415' cx='1408.93' cy='445.48' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='121.465' cx='696.1' cy='506.09' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='155.56' cx='390.59' cy='515.5' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='70.485' cx='1049.23' cy='444.5' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='81.655' cx='1323.06' cy='231.46' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='90.975' cx='1034.72' cy='158.88' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='115.655' cx='661.48' cy='296.93' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='175.085' cx='211.75' cy='456.46' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='159.54' cx='911.75' cy='231.69' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='101.625' cx='865.7' cy='481.55' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='174.345' cx='966.18' cy='555.23' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='116' cx='870.02' cy='110.85' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='129.015' cx='170.76' cy='162.38' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='166.47' cx='260.41' cy='297.39' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='146.16' cx='593.39' cy='542.78' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='54.01' cx='1236.27' cy='250.44' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='137.92' cx='174.2' cy='325.38' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='70.75' cx='985.76' cy='537' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='105.63' cx='1060.74' cy='401.42' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='140.12' cx='179.23' cy='13.08' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='72.47' cx='107.29' cy='523.28' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='112.46' cx='99.55' cy='323.14' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='109.53' cx='850.56' cy='318.42' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='65.505' cx='16.27' cy='470.85' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='181.625' cx='347.01' cy='49.38' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='170.79' cx='714.48' cy='316.99' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='167.69' cx='1297.01' cy='345.87' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='134.82' cx='366.73' cy='164.39' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='127.25' cx='472.42' cy='517.65' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='180.985' cx='29.26' cy='49.68' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='146.98' cx='293.54' cy='110.62' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='111.94' cx='1087.3' cy='329.92' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='108.325' cx='1005.04' cy='23.46' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='181.055' cx='1401.61' cy='119.05' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='91.94' cx='72.64' cy='2.41' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='107.87' cx='307.07' cy='265.03' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='97.875' cx='359.77' cy='2.26' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='77.945' cx='1031.71' cy='89.22' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='154.34' cx='1276.63' cy='305.69' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='184.8' cx='761.21' cy='375.85' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='72.405' cx='452.46' cy='82.5' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='115.185' cx='1207.96' cy='184.46' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3ccircle r='135.75' cx='602.16' cy='89.35' stroke='%23ff6f00' stroke-opacity='0.2' stroke-width='2'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1039'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    margin-bottom: 60px;
+    font-family: "Raleway", sans-serif;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--accsent-color);
+    border-color: var(--accsent-color);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--accsent-color);
+    border-color: var(--main-color);
+}
+
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/*Container related styles*/
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 10px;
+}
+
+.containerItem {
+    position: relative;
+    margin: 1rem;
+    width: 12rem;
+    height: 17rem;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    opacity: 0.9;
+    transition: 0.5s;
+    border: 1px solid var(--main-color);
+}
+
+.containerItem:hover {
+    transition: 0.8s;
+    scale: 1.11;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(70, 70, 70, 0.4);
+}
+
+.containerItem:active {
+    background-color: var(--accsent-color);
+}
+
+
+.containerPicture {
+    background-color: white;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    height: 10rem;
+    width: 100%;
+    text-align: center;
+}
+
+.containerPicture>img {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.containerRating {
+    text-align: left;
+    height: 1.5rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+.containerDetails {
+    color: var(--secondary-color);
+    height: 5rem;
+    padding: 0.5rem;
+    text-align: left;
+    font-weight: 500;
+    text-overflow: ellipsis;
+}
+
+.containerLink {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.rating {
+    padding: 0 0.3rem 0.3rem 0.3rem;
+}
+
+.star {
+    position: absolute;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.emptyStar {
+    color: var(--text-color);
+}
+
+.filledStar {
+    color: var(--main-color);
+}
+
+.tag {
+    background-color: lightskyblue;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 5px;
+    margin-right: 3px;
+    width: max-content;
+}
+
+.companyTag {
+    background-color: #228B22;
+}
+
+.typeTag {
+    background-color: #FF6F00;
+}
+
+.categoryTag {
+    background-color: cadetblue;
+}
+
+.flavourTag {
+    background-color: rgb(170, 86, 255);
+}
+
+/*Header and footer realated styles*/
+
+.header {
+    background-color: var(--main-color);
+    outline: 0px;
+    box-shadow: 0rem 1rem 1rem rgba(0, 83, 14, 0.1);
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+/*Beverage view*/
+
+.beverageView {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 0.3rem;
+    grid-row-gap: 0.3rem;
+    padding: 0.5rem;
+    position: relative;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(var(--main-color-opacity), 0.65);
+    border-radius: 10px;
+}
+
+.beverageName {
+    grid-area: 1 / 1 / 2 / 3;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.beveragePicture,
+.beverageInfo,
+.beverageDetails {
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+
+.beveragePicture {
+    grid-area: 2 / 1 / 8 / 2;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: white;
+}
+
+.beveragePicture>img {
+    border-top-right-radius: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.beverageDetails {
+    grid-area: 8 / 1 / 12 / 2;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 1rem;
+}
+
+.beverageInfo {
+    grid-area: 2 / 2 / 12 / 3;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 1rem;
+}
+
+.beverageReviewView {
+    background-color: rgba(var(--main-color-opacity), 0.65);
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.3rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.reviewContainerText {
+    font-size: 1.2rem;
+}
+
+.reviewContainerStars {
+    font-size: 1rem;
+}
+
+.reviewContainer {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+/* Review and comment fields  */
+
+.reviewRatingField {
+    width: 3.3rem;
+    background-color: var(--accsent-color);
+    border-radius: 50px;
+    text-align: center;
+    border: 0px;
+    margin: 0rem;
+    font-size: 1.2rem;
+}
+
+.reviewTextField, .commentTextField {
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 100%;
+    border: 0px;
+    line-height: 1rem;
+}
+
+.submitButton,
+.editButton,
+.deleteButton {
+    width: 5rem;
+    margin-left: 0.25rem;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border-radius: 25px;
+    border: 0px;
+}
+
+.editButton {
+    color: var(--text-color);
+    background-color: var(--accsent-color);
+}
+
+.deleteButton {
+    color: var(--text-color);
+    background-color: red;
+}
+
+.reviewError {
+    margin-left: 1rem;
+    text-align: left;
+    color: red;
+}
+
+.reviewActions, .commentActions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.25rem;
+}
+
+.commentContainerText {
+    font-size: 1rem;
+}
+
+.commentContainer {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.reviewCommentView {
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.3rem;
+    border-radius: 10px;
+    padding-left: 5%;
+}
+
+/*Custom beverage from*/
+
+.customFromContainer {
+    background-color: rgba(var(--main-color-opacity), 0.65);
+    height: 80vh;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.customFormContainerInner {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.customFromField {
+    background-color: white;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.customSubmitButton {
+    margin-top: 1rem;
+}
